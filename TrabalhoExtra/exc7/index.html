@@ -1,0 +1,28 @@
+<html>
+<body>
+    <h1>Card&aacute;pio da Lanchonete:</h1>
+    
+    <p>Cachorro quente..........Código: 1..........Preço: R$ 11,00<br>
+       Bauru...........................Código: 2..........Preço: R$ 8,50<br>
+       Misto Quente...............Código: 3..........Preço: R$ 8,00<br>
+       Hamburguer.................Código: 4..........Preço: R$ 9,00<br>
+       Cheeseburger...............Código: 5..........Preço: R$ 10,00<br>
+       Refrigerante.................Código: 6..........Preço: R$ 4,50
+    </p>
+    
+    <h2>Faça seu pedido:</h2>
+    <form id="pedidoForm">
+        <label for="codigo">Código do produto:</label>
+        <input type="number" id="codigo" name="codigo" min="1" max="6" required>
+        <br><br>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" required>
+        <br><br>
+        <button type="button" onclick="calcularValor()">Calcular</button>
+    </form>
+
+    <h3 id="resultado"></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
